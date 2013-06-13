@@ -1,0 +1,10 @@
+# MANAGED BY PUPPET!
+# modules/couchpotato/templates/default/couchpotato.erb
+# Changes WILL BE overwritten! Any permanent changes must be checked
+# into git.
+
+# COPY THIS FILE TO /etc/default/couchpotato
+# OPTIONS: APP_PATH, RUN_AS, DAEMON_PATH, CP_PID_FILE
+
+APP_PATH="<%= scope.lookupvar('couchpotato::path') %>"
+RUN_AS="<%= scope.lookupvar('couchpotato::user') %>"
